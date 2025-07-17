@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #container{
+        width: 380px;
+        height: 100vh;
+        border: 1px solid rgb(209, 194, 194);
+        border-radius: 30px;
+        background-color: blanchedalmond;
+       }
+       #circle{
+        width: 200px;
+        height: 200px;
+        margin-left: 90px;
+        border: 2px solid rgb(45, 229, 17);
+        margin-top: 150px;
+        border-radius: 50%;
+        background-color: rgba(126, 206, 160, 0.756);
+       position: absolute;
+        
+       }
+       .num{
+        color: blue;
+        font-size: 20px;
+        font-weight: 800;
+       }
+       #num12{
+        position: relative;
+        top: -260px;
+        left: 90px;
+       }
+       #num3{
+       position: relative;
+       left: 188px;
+       top: 40px;
+       }
+       #num6{
+        position: relative;
+        left: 95px;
+        top: 60px;
+       }
+       #sec{
+        display: block;
+        width: 100px;
+        height: 1px;
+        border: 1px solid black;
+        position: relative;
+        top: 100px;
+        left: 99px;
+        transform-origin: left;
+        transform: rotate(270deg);
+        animation-name: rotate;
+        animation-delay: 1s;
+        animation-duration: 5s;
+       animation-timing-function: linear;
+        animation-iteration-count: 10;
+        
+
+       }
+       #num9{
+        position: relative;
+        top: -98px;
+       }
+       #num5{
+        position: relative;
+        top: 75px;
+        left: 141px;
+       }
+       #num4{
+        position: relative;
+        top: 65px;
+        left: 175px;
+       }
+       #num7{
+        position: relative;
+        top: 28px;
+        left: 50px;
+       }
+       #num8{
+        position: relative;
+        top: -27px;
+        left: 16px;
+       }
+       #num10{
+        position: relative;
+        top: -167px;
+        left: 12px;
+       }
+       #num11{
+        position: relative;
+        top: -227px;
+        left: 40px;
+       }
+       #num1{
+        position: relative;
+        left: 140px;
+        top: 10px;
+       }
+       #num2{
+        position: relative;
+        top: 18px;
+       left: 175px;
+       }
+       @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="circle">
+            <div id="sec"></div>
+        <div class="num" id="num1">1</div>
+        <div class="num" id="num2">2</div>
+        <div class="num" id="num3">3</div>
+        <div class="num" id="num4">4</div>
+        <div class="num" id="num5">5</div>
+        <div class="num" id="num6">6</div>
+        <div class="num" id="num7">7</div>
+        <div class="num" id="num8">8</div>
+        <div class="num" id="num9">9</div>
+        <div class="num" id="num10">10</div>
+        <div class="num" id="num11">11</div>
+        <div class="num" id="num12">12</div>
+    
+    </div>
+    </div>
+</body>
+</html>
