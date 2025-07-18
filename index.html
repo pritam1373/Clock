@@ -11,16 +11,18 @@
         border: 1px solid rgb(209, 194, 194);
         border-radius: 30px;
         background-color: blanchedalmond;
+        position: absolute;
        }
        #circle{
         width: 200px;
         height: 200px;
         margin-left: 90px;
-        border: 2px solid rgb(45, 229, 17);
+       
         margin-top: 150px;
         border-radius: 50%;
         background-color: rgba(126, 206, 160, 0.756);
        position: absolute;
+       z-index: 7;
         
        }
        .num{
@@ -106,15 +108,21 @@
         top: 18px;
        left: 175px;
        }
-      
+       /* @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        } */
        
        #box{
         width: 150px;
         height: 50px;
         border: 1px solid black;
         position: relative;
-        top: 30px;
-        left: 90px;
+        top: -390px;
+        left: 30px;
         font-size: 30px;
         font-weight: 900;
         text-align: center;
@@ -146,13 +154,26 @@
         background-color: blue;
         border-radius: 50%;
         position: relative;
-        top: 197px;
-        left: 185px;
+        top: -240px;
+        left: 95px;
+       }
+       #sucircle{
+        width: 220px;
+        height: 220px;
+        border: 1px solid black;
+        position: relative;
+        top: -360px;
+        left: -10px;
+        border-radius: 50%;
+       background-color: rgba(156, 176, 164, 0.756);
+      
+       z-index: -1;
        }
     </style>
 </head>
 <body>
     <div id="container">
+        
     <div id="circle">
             <div id="sec"></div>
             <div id="min"></div>
@@ -171,9 +192,9 @@
         <div class="num" id="num11">11</div>
         <div class="num" id="num12">12</div>
     
-    </div>
     <div id="box"></div>
   <div class="bindu"></div>
+  <div id="sucircle"></div>
     </div>
     <script src="scripts.js"></script>
 </body>
